@@ -1,16 +1,18 @@
-# museum_collection
+# Museum Collection Management Mobile
 
-A new Flutter project.
+Nama : Erstevan Laurel Lucky Almeida<br>
+NPM : 2206082493<br>
+Kelas : PBP - E<br>
 
-## Getting Started
+<hr>
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Tugas 7: Elemen Dasar Flutter
+ - [x] Membuat sebuah program Flutter baru dengan tema inventory seperti tugas-tugas sebelumnya.
+ - [x] Membuat tiga tombol sederhana dengan ikon dan teks untuk:
+    - [x] Melihat daftar item (Lihat Item)
+    - [x] Menambah item (Tambah Item)
+    - [x] Logout (Logout)
+ - [x] Memunculkan Snackbar dengan tulisan:
+    - [x] "Kamu telah menekan tombol Lihat Item" ketika tombol Lihat Item ditekan.
+    - [x] "Kamu telah menekan tombol Tambah Item" ketika tombol Tambah Item ditekan.
+    - [x] "Kamu telah menekan tombol Logout" ketika tombol Logout ditekan.
