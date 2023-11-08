@@ -18,7 +18,7 @@ Kelas : PBP - E<br>
     - [x] **"Kamu telah menekan tombol Logout" ketika tombol Logout ditekan.**
 - [x] **Menjawab beberapa pertanyaan berikut pada README.md pada root folder.**
     - [x] **Apa perbedaan utama antara stateless dan stateful widget dalam konteks pengembangan aplikasi Flutter?**
-    > Statless widget merupakan widget yang dibangun dengan konfigurasi yang telah diinisiasi di awal. Stateless widget merupakan widget yang bersifat *static* atau tidak pernah berubah. Sedangkan, stateful widget merupakan widget yang dapat berubah secara dinamis.
+    > Stateless widget merupakan widget yang dibangun dengan konfigurasi yang telah diinisiasi di awal. Stateless widget merupakan widget yang bersifat *static* atau tidak pernah berubah. Sedangkan, stateful widget merupakan widget yang dapat berubah secara dinamis.
     - [x] **Sebutkan seluruh widget yang kamu gunakan untuk menyelesaikan tugas ini dan jelaskan fungsinya masing-masing.**
     > - **MaterialApp** (**main.dart**), digunakan untuk mengatur struktur dasar aplikasi.
     > - **Scaffold** (**menu.dart**), digunakan untuk membungkus tampilan halaman utama.
