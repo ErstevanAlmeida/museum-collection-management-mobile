@@ -109,6 +109,7 @@ class ShopCard extends StatelessWidget {
           // Container untuk menyimpan Icon dan Text
           padding: const EdgeInsets.all(8),
           decoration: BoxDecoration(
+            color: const Color.fromARGB(255, 248, 224, 104),
           border: Border.all(
             color: Colors.white, 
             width: 2.0, 
@@ -121,14 +122,14 @@ class ShopCard extends StatelessWidget {
               children: [
                 Icon(
                   item.icon,
-                  color: Colors.white,
+                  color: Colors.grey.shade800,
                   size: 30.0,
                 ),
                 const Padding(padding: EdgeInsets.all(3)),
                 Text(
                   item.name,
                   textAlign: TextAlign.center,
-                  style: const TextStyle(color: Colors.white),
+                  style: const TextStyle(color: Color.fromARGB(255, 16, 34, 50)),
                 ),
               ],
             ),
