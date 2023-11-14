@@ -8,6 +8,7 @@ class LeftDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
+      backgroundColor: const Color.fromARGB(255, 147, 204, 234),
       child: ListView(
         children: [
           const DrawerHeader(
@@ -26,7 +27,13 @@ class LeftDrawer extends StatelessWidget {
                   ),
                 ),
                 Padding(padding: EdgeInsets.all(10)),
-                Text("Catat seluruh keperluan belanjamu di sini!"),
+                Text(
+                  "Welcome to DS Museum.\n Timeless Luxurious Museum.",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                  ),
+                )
               ],
             ),
           ),
