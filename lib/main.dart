@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:museum_collection/menu.dart';
+import 'package:museum_collection/screens/menu.dart';
 
 void main() {
   runApp(const MyApp());

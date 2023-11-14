@@ -1,19 +1,15 @@
 import 'package:flutter/material.dart';
-
-class ShopItem {
-  final String name;
-  final IconData icon;
-
-  ShopItem(this.name, this.icon);
-}
+import 'package:museum_collection/screens/collection_form.dart';
+import 'package:museum_collection/widgets/left_drawer.dart';
+import 'package:museum_collection/widgets/collection_card.dart';
 
 class MyHomePage extends StatelessWidget {
     MyHomePage({Key? key}) : super(key: key);
 
-    final List<ShopItem> items = [
-    ShopItem("Lihat Koleksi", Icons.museum_outlined),
-    ShopItem("Tambah Koleksi", Icons.add_circle_outline_outlined),
-    ShopItem("Logout", Icons.logout),
+    final List<MuseumItem> items = [
+    MuseumItem("Lihat Koleksi", Icons.museum_outlined),
+    MuseumItem("Tambah Koleksi", Icons.add_circle_outline_outlined),
+    MuseumItem("Logout", Icons.logout),
 ];
 
   // This widget is the home page of your application. It is stateful, meaning
@@ -43,6 +39,7 @@ class MyHomePage extends StatelessWidget {
           ),
         ),
       ),
+      drawer: const LeftDrawer(),
       body: Container(
         color: const Color.fromARGB(255, 147, 204, 234),
         child: SingleChildScrollView(
@@ -73,9 +70,9 @@ class MyHomePage extends StatelessWidget {
                   mainAxisSpacing: 10,
                   crossAxisCount: 3,
                   shrinkWrap: true,
-                  children: items.map((ShopItem item) {
+                  children: items.map((MuseumItem item) {
                     // Iterasi untuk setiap item
-                    return ShopCard(item);
+                    return CollectionCard(item);
                   }).toList(),
                 ),
               ],
@@ -87,10 +84,10 @@ class MyHomePage extends StatelessWidget {
   }
 }
 
-class ShopCard extends StatelessWidget {
-  final ShopItem item;
+class CollectionCard extends StatelessWidget {
+  final MuseumItem item;
 
-  const ShopCard(this.item, {super.key}); // Constructor
+  const CollectionCard(this.item, {super.key}); // Constructor
 
   @override
   Widget build(BuildContext context) {
@@ -104,6 +101,12 @@ class ShopCard extends StatelessWidget {
             ..hideCurrentSnackBar()
             ..showSnackBar(SnackBar(
                 content: Text("Kamu telah menekan tombol ${item.name}!")));
+
+          // Navigate ke route yang sesuai
+          if (item.name == "Tambah Koleksi") {
+            Navigator.push(context,
+            MaterialPageRoute(builder: (context) => const CollectionFormPage()));
+          }
         },
         child: Container(
           // Container untuk menyimpan Icon dan Text
