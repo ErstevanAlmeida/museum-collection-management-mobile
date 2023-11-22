@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:museum_collection/screens/collection_form.dart';
 import 'package:museum_collection/widgets/left_drawer.dart';
 import 'package:museum_collection/widgets/collection_card.dart';
 
@@ -84,64 +83,64 @@ class MyHomePage extends StatelessWidget {
   }
 }
 
-class CollectionCard extends StatelessWidget {
-  final MuseumItem item;
+// class CollectionCard extends StatelessWidget {
+//   final MuseumItem item;
 
-  const CollectionCard(this.item, {super.key}); // Constructor
+//   const CollectionCard(this.item, {super.key}); // Constructor
 
-  @override
-  Widget build(BuildContext context) {
-    return Material(
-      color: const Color.fromARGB(255, 147, 204, 234),
-      child: InkWell(
-        // Area responsive terhadap sentuhan
-        onTap: () {
-          // Memunculkan SnackBar ketika diklik
-          ScaffoldMessenger.of(context)
-            ..hideCurrentSnackBar()
-            ..showSnackBar(SnackBar(
-                content: Text("Kamu telah menekan tombol ${item.name}!")));
+//   @override
+//   Widget build(BuildContext context) {
+//     return Material(
+//       color: const Color.fromARGB(255, 147, 204, 234),
+//       child: InkWell(
+//         // Area responsive terhadap sentuhan
+//         onTap: () {
+//           // Memunculkan SnackBar ketika diklik
+//           ScaffoldMessenger.of(context)
+//             ..hideCurrentSnackBar()
+//             ..showSnackBar(SnackBar(
+//                 content: Text("Kamu telah menekan tombol ${item.name}!")));
 
-          // Navigate ke route yang sesuai
-          if (item.name == "Tambah Koleksi") {
-            Navigator.push(context,
-            MaterialPageRoute(builder: (context) => const CollectionFormPage()));
-          }
-        },
-        child: Container(
-          // Container untuk menyimpan Icon dan Text
-          padding: const EdgeInsets.all(8),
-          decoration: BoxDecoration(
-            color: const Color.fromARGB(255, 248, 224, 104),
-          border: Border.all(
-            color: Colors.white, 
-            width: 2.0, 
-          ),
-          borderRadius: BorderRadius.circular(10.0),
-        ),
-          child: Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Icon(
-                  item.icon,
-                  color: Colors.grey.shade800,
-                  size: 30.0,
-                ),
-                const Padding(padding: EdgeInsets.all(3)),
-                Text(
-                  item.name,
-                  textAlign: TextAlign.center,
-                  style: const TextStyle(color: Color.fromARGB(255, 16, 34, 50)),
-                ),
-              ],
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-}
+//           // Navigate ke route yang sesuai
+//           if (item.name == "Tambah Koleksi") {
+//             Navigator.push(context,
+//             MaterialPageRoute(builder: (context) => const CollectionFormPage()));
+//           }
+//         },
+//         child: Container(
+//           // Container untuk menyimpan Icon dan Text
+//           padding: const EdgeInsets.all(8),
+//           decoration: BoxDecoration(
+//             color: const Color.fromARGB(255, 248, 224, 104),
+//           border: Border.all(
+//             color: Colors.white, 
+//             width: 2.0, 
+//           ),
+//           borderRadius: BorderRadius.circular(10.0),
+//         ),
+//           child: Center(
+//             child: Column(
+//               mainAxisAlignment: MainAxisAlignment.center,
+//               children: [
+//                 Icon(
+//                   item.icon,
+//                   color: Colors.grey.shade800,
+//                   size: 30.0,
+//                 ),
+//                 const Padding(padding: EdgeInsets.all(3)),
+//                 Text(
+//                   item.name,
+//                   textAlign: TextAlign.center,
+//                   style: const TextStyle(color: Color.fromARGB(255, 16, 34, 50)),
+//                 ),
+//               ],
+//             ),
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }
 
 // bin
 
