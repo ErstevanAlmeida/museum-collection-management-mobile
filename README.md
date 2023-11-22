@@ -88,7 +88,7 @@ Kelas : PBP - E<br>
 
 <hr>
 
-- [ ] **Memastikan deployment proyek tugas Django kamu telah berjalan dengan baik.**
+- [x] **Memastikan deployment proyek tugas Django kamu telah berjalan dengan baik.**
 - [x] **Membuat halaman login pada proyek tugas Flutter.**
 - [x] **Mengintegrasikan sistem autentikasi Django dengan proyek tugas Flutter.**
 - [x] **Membuat model kustom sesuai dengan proyek aplikasi Django.**

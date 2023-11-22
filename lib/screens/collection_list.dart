@@ -16,7 +16,7 @@ class CollectionPage extends StatefulWidget {
 class _CollectionPageState extends State<CollectionPage> {
 Future<List<Collection>> fetchProduct() async {
     var url = Uri.parse(
-        'http://localhost:8000/json/');
+        'https://erstevan-laurel-tugas.pbp.cs.ui.ac.id/json/');
     var response = await http.get(
         url,
         headers: {"Content-Type": "application/json"},

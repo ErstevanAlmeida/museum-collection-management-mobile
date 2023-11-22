@@ -178,7 +178,7 @@ class _CollectionFormPageState extends State<CollectionFormPage> {
                           // Kirim ke Django dan tunggu respons
                           // TODO: Ganti URL dan jangan lupa tambahkan trailing slash (/) di akhir URL!
                           final response = await request.postJson(
-                          "http://localhost:8000/create-flutter/",
+                          "https://erstevan-laurel-tugas.pbp.cs.ui.ac.id/create-flutter/",
                           jsonEncode(<String, String>{
                               'collection': _collection,
                               'type': _type,
